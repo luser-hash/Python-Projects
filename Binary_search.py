@@ -28,7 +28,7 @@ def binary_search(arr, target):
     
     while left <= right:
         mid = (left+right) // 2
-        if arr[mid] == target:   # Time complexity: O(log2 n)
+        if arr[mid] == target: 
             return mid
         elif arr[mid] < target:
             left = mid + 1
@@ -42,4 +42,5 @@ target = 7
 
 binary_search_result = binary_search(array, target)
 print(binary_search_result)
+
 
